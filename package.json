@@ -2,12 +2,35 @@
   "name": "@glennreyes/react-click-outside",
   "version": "0.0.0",
   "description": "🐭 Handles clicks outside of a component",
-  "main": "index.js",
-  "repository": "glennreyes/react-click-outside",
+  "keywords": [
+    "onclick",
+    "react",
+    "react-component"
+  ],
+  "main": "build",
+  "files": [
+    "build",
+    "src"
+  ],
+  "repository": "https://github.com/glennreyes/react-click-outside",
   "author": "Glenn Reyes <glenn@glennreyes.com>",
   "license": "MIT",
+  "scripts": {
+    "prepublish": "rollup -c"
+  },
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "husky": "^1.1.2",
+    "prettier": "^1.14.3",
+    "pretty-quick": "^1.8.0",
+    "rollup": "^0.66.6",
+    "rollup-plugin-babel": "^4.0.3"
   }
 }

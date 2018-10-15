@@ -15,10 +15,8 @@ class ClickOutside extends Component {
   clickTouch = this.isTouch ? 'touchend' : 'click';
 
   isTouch = !!(
-    typeof window === 'object' &&
-    typeof document === 'object' &&
-    ('ontouchstart' in window ||
-      (window.DocumentTouch && document instanceof window.DocumentTouch))
+    'ontouchstart' in window ||
+    (window.DocumentTouch && document instanceof window.DocumentTouch)
   );
 
   handle = event => {
@@ -39,8 +37,8 @@ class ClickOutside extends Component {
     return typeof children === 'function' ? (
       children({ containerRef })
     ) : (
-        <div ref={containerRef}>{children}</div>
-      );
+      <div ref={containerRef}>{children}</div>
+    );
   }
 }
 
