@@ -13,6 +13,9 @@
     "src"
   ],
   "repository": "https://github.com/glennreyes/react-click-outside",
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Glenn Reyes <glenn@glennreyes.com>",
   "license": "MIT",
   "scripts": {
