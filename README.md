@@ -1,3 +1,5 @@
+This project is archived. Use [useClickAway](https://github.com/streamich/react-use/blob/master/docs/useClickAway.md) instead. Thank you!
+
 # React ClickOutside
 
 🐭 Handles clicks outside of a component.
